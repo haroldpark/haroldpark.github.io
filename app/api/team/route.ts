@@ -1,6 +1,8 @@
-import { getTeamForUser } from '@/lib/db/queries';
+// TODO: Configure team API
+// import { getTeamForUser } from '@/lib/db/queries';
 
 export async function GET() {
-  const team = await getTeamForUser();
-  return Response.json(team);
+  // TODO: Implement team data fetching
+  console.log("Team API disabled - TODO: Configure database");
+  return Response.json(null);
 }

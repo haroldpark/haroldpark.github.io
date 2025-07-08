@@ -1,15 +1,20 @@
-'use server';
+"use server";
 
-import { redirect } from 'next/navigation';
-import { createCheckoutSession, createCustomerPortalSession } from './stripe';
-import { withTeam } from '@/lib/auth/middleware';
+import { redirect } from "next/navigation";
+// TODO: Configure Stripe payment actions
+// import { createCheckoutSession, createCustomerPortalSession } from './stripe';
+// import { withTeam } from '@/lib/auth/middleware';
 
-export const checkoutAction = withTeam(async (formData, team) => {
-  const priceId = formData.get('priceId') as string;
-  await createCheckoutSession({ team: team, priceId });
-});
+export const checkoutAction = async (formData: any) => {
+  // TODO: Implement Stripe checkout
+  console.log("Stripe checkout action disabled - TODO: Configure Stripe");
+  redirect("/pricing");
+};
 
-export const customerPortalAction = withTeam(async (_, team) => {
-  const portalSession = await createCustomerPortalSession(team);
-  redirect(portalSession.url);
-});
+export const customerPortalAction = async () => {
+  // TODO: Implement Stripe customer portal
+  console.log(
+    "Stripe customer portal action disabled - TODO: Configure Stripe"
+  );
+  redirect("/dashboard");
+};
