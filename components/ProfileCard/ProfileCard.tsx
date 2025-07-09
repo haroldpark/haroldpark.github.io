@@ -1,3 +1,4 @@
+"use client";
 /*
 	Installed from https://reactbits.dev/ts/default/
 */
@@ -334,4 +335,3 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
 const ProfileCard = React.memo(ProfileCardComponent);
 
 export default ProfileCard;
-export { ProfileCard };
