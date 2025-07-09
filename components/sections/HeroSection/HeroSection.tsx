@@ -5,6 +5,8 @@ import { ArrowRight } from "lucide-react";
 import { ProfileCard } from "@/components/ProfileCard";
 import { RotatingText } from "@/components/RotatingText";
 import { LetterGlitch } from "@/components/LetterGlitch";
+import { LogoAvatar } from "@/components/LogoAvatar";
+import { Montserrat } from "next/font/google";
 
 interface HeroSectionProps {
   title?: string;
@@ -22,6 +24,8 @@ interface HeroSectionProps {
     contactText?: string;
   };
 }
+
+const montserrat = Montserrat({ subsets: ["latin"], weight: "100" });
 
 export function HeroSection({
   description = "Launch your SaaS product in record time with our powerful, ready-to-use template. Packed with modern technologies and essential integrations.",
@@ -56,19 +60,26 @@ export function HeroSection({
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           {/* Left side - Text content */}
           <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left bg-white/20 backdrop-blur-xs rounded-lg p-6 shadow-lg">
-            <h1 className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl md:text-6xl">
-              Build Your SaaS
-              <span className="block text-orange-500">
-                <RotatingText
-                  texts={rotatingTexts}
-                  className="text-orange-500"
-                  auto={true}
-                  loop={true}
-                  rotationInterval={3000}
-                  splitBy="words"
-                />
-              </span>
-            </h1>
+            <div className="flex items-center gap-4 mb-6">
+              <div>
+                <h1 className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl md:text-6xl">
+                  <div className={montserrat.className + " flex items-center"}>
+                    <LogoAvatar size="lg" className="mr-3" />
+                    SOLUTIONS
+                  </div>
+                  <span className="block text-orange-500">
+                    <RotatingText
+                      texts={rotatingTexts}
+                      className="text-orange-500"
+                      auto={true}
+                      loop={true}
+                      rotationInterval={3000}
+                      splitBy="words"
+                    />
+                  </span>
+                </h1>
+              </div>
+            </div>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               Solving real-world problems with tech and empathy
             </p>

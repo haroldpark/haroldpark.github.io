@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CreditCard, Database } from "lucide-react";
 import { Terminal } from "./terminal";
-import { HeroSection } from "@/components/HeroSection";
+import { HeroSection } from "@/components/sections/HeroSection";
 
 export default function HomePage() {
   return (

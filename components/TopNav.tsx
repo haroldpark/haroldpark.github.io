@@ -64,15 +64,8 @@ const TopNav = () => {
     <section className="py-4 border-b border-gray-200">
       <div className="container mx-auto">
         <nav className="flex items-center justify-between">
-          <a
-            href="https://www.shadcnblocks.com"
-            className="flex items-center gap-2"
-          >
-            <img
-              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
-              className="max-h-8"
-              alt="Shadcn UI Navbar"
-            />
+          <a href="/" className="flex items-center gap-2">
+            <img src="/logo.png" className="max-h-8" alt="Shadcn UI Navbar" />
             <span className="text-lg font-semibold tracking-tighter">
               HP Solutions
             </span>
