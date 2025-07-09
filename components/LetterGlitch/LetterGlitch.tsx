@@ -1,3 +1,5 @@
+"use client";
+
 /*
 	Installed from https://reactbits.dev/ts/tailwind/
 */
@@ -125,7 +127,7 @@ const LetterGlitch = ({
   const interpolateColor = (
     start: { r: number; g: number; b: number },
     end: { r: number; g: number; b: number },
-    factor: number,
+    factor: number
   ) => {
     const result = {
       r: Math.round(start.r + (end.r - start.r) * factor),
@@ -226,7 +228,7 @@ const LetterGlitch = ({
           letter.color = interpolateColor(
             startRgb,
             endRgb,
-            letter.colorProgress,
+            letter.colorProgress
           );
           needsRedraw = true;
         }

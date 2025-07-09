@@ -1,24 +1,20 @@
 "use client";
 import React from "react";
-import { LogoAvatar } from "@/components/LogoAvatar";
+import { LogoAvatar } from "@/components/Logo/LogoAvatar";
 
 interface LogoProps {
-  title?: string;
   size?: "sm" | "md" | "lg" | "xl";
   className?: string;
+  showText?: boolean;
 }
 
-export function Logo({
-  title = "SOLUTIONS",
-  size = "lg",
-  className = "",
-}: LogoProps) {
+export function Logo({ size = "lg", className = "", showText }: LogoProps) {
   return (
-    <div
-      className={`font-secondary flex items-center font-bold text-navy-900 ${className}`}
-    >
+    <div className={`font-secondary flex items-center font-bold ${className}`}>
       <LogoAvatar size={size} className="mr-3" />
-      {title}
+      {showText && (
+        <span className={`text-secondary font-${size}`}>SOLUTIONS</span>
+      )}
     </div>
   );
 }

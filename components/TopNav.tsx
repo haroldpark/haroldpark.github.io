@@ -62,34 +62,34 @@ const TopNav = () => {
   ];
 
   return (
-    <section className="py-4 border-b border-gray-200">
+    <section className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm py-4 border-b border-gray-200">
       <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           <a href="/" className="flex items-center gap-2">
-            <Logo title="SOLUTIONS" size="md" />
+            <Logo size="md" showText />
           </a>
           <NavigationMenu className="hidden lg:block">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#"
-                  className={navigationMenuTriggerStyle()}
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
                 >
-                  Products
+                  About Me
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#"
-                  className={navigationMenuTriggerStyle()}
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
                 >
-                  Resources
+                  Services
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#"
-                  className={navigationMenuTriggerStyle()}
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
                 >
                   Contact
                 </NavigationMenuLink>

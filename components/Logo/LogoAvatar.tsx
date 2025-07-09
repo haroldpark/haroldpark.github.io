@@ -21,7 +21,7 @@ export function LogoAvatar({
 
   return (
     <div
-      className={`relative rounded-full overflow-hidden bg-white shadow-sm border border-gray-200 ${sizeClasses[size]} ${className}`}
+      className={`relative rounded-full overflow-hidden bg-white shadow-md border border-gray-200 ${sizeClasses[size]} ${className}`}
     >
       <Image
         src="/logo.png"

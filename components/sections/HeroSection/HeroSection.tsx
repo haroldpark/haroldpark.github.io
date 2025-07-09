@@ -6,6 +6,7 @@ import { ProfileCard } from "@/components/ProfileCard";
 import { RotatingText } from "@/components/RotatingText";
 import { LetterGlitch } from "@/components/LetterGlitch";
 import { Logo } from "@/components/Logo";
+import { ShinyText } from "@/components/ShinyText";
 
 interface HeroSectionProps {
   title?: string;
@@ -53,59 +54,49 @@ export function HeroSection({
       </div>
 
       {/* Main content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-          {/* Left side - Text content */}
-          <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left bg-white/20 backdrop-blur-xs rounded-lg p-6 shadow-lg">
-            <div className="flex items-center gap-4 mb-6">
-              <div>
-                <h1 className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl md:text-6xl">
-                  <Logo title="SOLUTIONS" size="lg" />
-                  <span className="block text-orange-500">
-                    <RotatingText
-                      texts={rotatingTexts}
-                      className="text-orange-500"
-                      auto={true}
-                      loop={true}
-                      rotationInterval={3000}
-                      splitBy="words"
-                    />
-                  </span>
-                </h1>
-              </div>
-            </div>
-            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Solving real-world problems with tech and empathy
-            </p>
-            <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-              <a href={buttonHref} target="_blank" rel="noopener noreferrer">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-lg rounded-full"
-                >
-                  My Services
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:max-w-3xl md:mx-auto lg:col-span-6 lg:text-left bg-white/30 backdrop-blur-xs rounded-lg p-6 shadow-lg text-center">
+        <div className="flex items-center gap-4">
+          <div className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl md:text-6xl w-full">
+            <Logo size="lg" showText={false} />
+            <div className="flex flex-col items-center my-16">
+              <RotatingText
+                texts={["Technical Consulting", "Mentorship", "Teaching"]}
+                className="text-primary font-secondary"
+                auto={true}
+                loop={true}
+                rotationInterval={3000}
+                splitBy="words"
+              />
+              <RotatingText
+                texts={[
+                  "resolve business pain-points",
+                  "career-change into the tech industry",
+                  "learn new skills through the socratic method",
+                ]}
+                className="text-secondary text-2xl justify-end"
+                auto={true}
+                loop={true}
+                rotationInterval={3000}
+                splitBy="words"
+              />
             </div>
           </div>
-
-          {/* Right side - ProfileCard */}
-          <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-center">
-            <ProfileCard
-              avatarUrl={avatarUrl}
-              name={profileCardProps.name || ""}
-              title={profileCardProps.title || ""}
-              handle={profileCardProps.handle || ""}
-              status={profileCardProps.status || ""}
-              contactText={profileCardProps.contactText || ""}
-              showUserInfo={false}
-              enableTilt={true}
-              className="w-full"
-              rotatingTexts={["Full-stack Web Engineer"]}
-              useRotatingTitle={true}
-            />
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="pb-3">
+            <a href={buttonHref} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg rounded-full"
+              >
+                <ShinyText
+                  text="Check Out My Services"
+                  disabled={false}
+                  speed={3}
+                />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@
 import React, { useEffect, useRef, useCallback, useMemo } from "react";
 import "./ProfileCard.css";
 import { RotatingText } from "@/components/RotatingText";
+import Image from "next/image";
 
 interface ProfileCardProps {
   avatarUrl: string;
@@ -283,29 +284,28 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
           <div className="pc-shine" />
           <div className="pc-glare" />
           <div className="pc-content pc-avatar-content">
-            <img
+            <Image
               className="avatar"
-              src={avatarUrl}
+              src="/headshot-bgremoved.png"
               alt={`${name || "User"} avatar`}
+              width={96}
+              height={96}
               loading="lazy"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.style.display = "none";
-              }}
+              style={{ objectFit: "cover" }}
+              unoptimized={true}
             />
             {showUserInfo && (
               <div className="pc-user-info">
                 <div className="pc-user-details">
                   <div className="pc-mini-avatar">
-                    <img
-                      src={miniAvatarUrl || avatarUrl}
+                    <Image
+                      src="/headshot-bgremoved.png"
                       alt={`${name || "User"} mini avatar`}
+                      width={32}
+                      height={32}
                       loading="lazy"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.opacity = "0.5";
-                        target.src = avatarUrl;
-                      }}
+                      style={{ objectFit: "cover", opacity: 1 }}
+                      unoptimized={true}
                     />
                   </div>
                   <div className="pc-user-text">
@@ -335,7 +335,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                   auto={true}
                   loop={true}
                   rotationInterval={3000}
-                  splitBy="words"
+                  splitBy="whole"
                 />
               ) : (
                 <p>{title}</p>
