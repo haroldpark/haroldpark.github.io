@@ -1,6 +1,7 @@
 "use client";
 
 import { MenuIcon } from "lucide-react";
+import { Logo } from "@/components/Logo";
 
 import {
   Accordion,
@@ -65,10 +66,7 @@ const TopNav = () => {
       <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           <a href="/" className="flex items-center gap-2">
-            <img src="/logo.png" className="max-h-8" alt="Shadcn UI Navbar" />
-            <span className="text-lg font-semibold tracking-tighter">
-              HP Solutions
-            </span>
+            <Logo title="SOLUTIONS" size="md" />
           </a>
           <NavigationMenu className="hidden lg:block">
             <NavigationMenuList>

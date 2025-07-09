@@ -5,8 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { ProfileCard } from "@/components/ProfileCard";
 import { RotatingText } from "@/components/RotatingText";
 import { LetterGlitch } from "@/components/LetterGlitch";
-import { LogoAvatar } from "@/components/LogoAvatar";
-import { Montserrat } from "next/font/google";
+import { Logo } from "@/components/Logo";
 
 interface HeroSectionProps {
   title?: string;
@@ -24,8 +23,6 @@ interface HeroSectionProps {
     contactText?: string;
   };
 }
-
-const montserrat = Montserrat({ subsets: ["latin"], weight: "100" });
 
 export function HeroSection({
   description = "Launch your SaaS product in record time with our powerful, ready-to-use template. Packed with modern technologies and essential integrations.",
@@ -63,10 +60,7 @@ export function HeroSection({
             <div className="flex items-center gap-4 mb-6">
               <div>
                 <h1 className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl md:text-6xl">
-                  <div className={montserrat.className + " flex items-center"}>
-                    <LogoAvatar size="lg" className="mr-3" />
-                    SOLUTIONS
-                  </div>
+                  <Logo title="SOLUTIONS" size="lg" />
                   <span className="block text-orange-500">
                     <RotatingText
                       texts={rotatingTexts}
@@ -108,7 +102,9 @@ export function HeroSection({
               contactText={profileCardProps.contactText || ""}
               showUserInfo={false}
               enableTilt={true}
-              className="w-full max-w-md"
+              className="w-full"
+              rotatingTexts={["Full-stack Web Engineer"]}
+              useRotatingTitle={true}
             />
           </div>
         </div>

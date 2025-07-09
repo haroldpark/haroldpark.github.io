@@ -24,7 +24,7 @@ export function LogoAvatar({
       className={`relative rounded-full overflow-hidden bg-white shadow-sm border border-gray-200 ${sizeClasses[size]} ${className}`}
     >
       <Image
-        src="/logo-text.png"
+        src="/logo.png"
         alt={alt}
         fill
         className="object-contain p-1"

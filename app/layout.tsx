@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 // TODO: Configure database queries
 // import { getUser, getTeamForUser } from '@/lib/db/queries';
 import { SWRConfig } from "swr";
@@ -15,6 +15,7 @@ export const viewport: Viewport = {
 };
 
 const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,

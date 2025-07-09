@@ -5,6 +5,7 @@
 
 import React, { useEffect, useRef, useCallback, useMemo } from "react";
 import "./ProfileCard.css";
+import { RotatingText } from "@/components/RotatingText";
 
 interface ProfileCardProps {
   avatarUrl: string;
@@ -23,6 +24,8 @@ interface ProfileCardProps {
   contactText?: string;
   showUserInfo?: boolean;
   onContactClick?: () => void;
+  rotatingTexts?: string[];
+  useRotatingTitle?: boolean;
 }
 
 const DEFAULT_BEHIND_GRADIENT =
@@ -73,6 +76,8 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   contactText = "Contact",
   showUserInfo = true,
   onContactClick,
+  rotatingTexts = [],
+  useRotatingTitle = false,
 }) => {
   const wrapRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -323,7 +328,18 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
           <div className="pc-content">
             <div className="pc-details">
               <h3>{name}</h3>
-              <p>{title}</p>
+              {useRotatingTitle ? (
+                <RotatingText
+                  texts={rotatingTexts}
+                  className="text-orange-500 font-semibold"
+                  auto={true}
+                  loop={true}
+                  rotationInterval={3000}
+                  splitBy="words"
+                />
+              ) : (
+                <p>{title}</p>
+              )}
             </div>
           </div>
         </div>
