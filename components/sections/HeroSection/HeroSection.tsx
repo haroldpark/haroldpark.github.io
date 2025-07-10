@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { ProfileCard } from "@/components/ProfileCard";
 import { RotatingText } from "@/components/RotatingText";
-import { LetterGlitch } from "@/components/LetterGlitch";
+import { LetterGlitch } from "@/components/Backgrounds/LetterGlitch";
 import { Logo } from "@/components/Logo";
-import { ShinyText } from "@/components/ShinyText";
+import { ShinyText } from "@/components/TextAnimations/ShinyText";
 
 interface HeroSectionProps {
   title?: string;
@@ -56,11 +56,9 @@ export function HeroSection({
       {/* Main content */}
       <div className="bg-white/30 backdrop-blur-xs p-6 shadow-lg">
         <div className="flex items-center justify-center">
-          <div className="flex flex-col pt-32 pb-20 font-bold text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
-            <div className="flex flex-row gap-3">
-              <div className="font-secondary text-primary text-shadow-lg">
-                Tech
-              </div>
+          <div className="flex flex-col pt-32 pb-20">
+            <div className="font-secondary flex flex-row gap-3 font-bold text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-shadow-lg ">
+              <div className="text-primary">Tech</div>
               <RotatingText
                 texts={["Consulting", "Mentorship", "Learning"]}
                 className="text-white font-secondary"

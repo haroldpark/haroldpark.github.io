@@ -1,9 +1,9 @@
 //create a page component for the about me page
 import ProfileCard from "@/components/ProfileCard/ProfileCard";
 import { Button } from "@/components/ui/button";
-import { LetterGlitch } from "@/components/LetterGlitch";
+import { LetterGlitch } from "@/components/Backgrounds/LetterGlitch";
 import { Logo } from "@/components/Logo";
-import { ShinyText } from "@/components/ShinyText";
+import { ShinyText } from "@/components/TextAnimations/ShinyText";
 import { RotatingText } from "@/components/RotatingText";
 import { ArrowRight } from "lucide-react";
 import { Header } from "@/components/Header";

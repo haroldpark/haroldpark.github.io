@@ -1,6 +1,6 @@
 "use client";
 
-import { LetterGlitch } from "@/components/LetterGlitch";
+import { LetterGlitch } from "@/components/Backgrounds/LetterGlitch";
 
 interface HeaderProps {
   title: string;
