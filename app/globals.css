@@ -307,11 +307,10 @@
 
   background: linear-gradient(
     120deg,
-    #ff6900 40%,
-
-    rgba(255, 255, 255, 0.8) 50%,
-
-    rgba(255, 255, 255, 0) 60%
+    #2b4539 40%,
+    #61dca3 50%,
+    #76ca72 60%,
+    #29752a 70%
   );
 
   background-size: 200% 100%;

@@ -43,7 +43,7 @@ export function HeroSection({
   return (
     <section className="py-20 relative">
       {/* LetterGlitch foreground overlay */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
+      <div className="absolute inset-0">
         <LetterGlitch
           glitchColors={["#2b4539", "#61dca3", "#76ca72", "#29752a"]}
           glitchSpeed={50}
@@ -54,40 +54,49 @@ export function HeroSection({
       </div>
 
       {/* Main content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:max-w-3xl md:mx-auto lg:col-span-6 lg:text-left bg-white/30 backdrop-blur-xs rounded-lg p-6 shadow-lg text-center">
-        <div className="flex items-center gap-4">
-          <div className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl md:text-6xl w-full">
-            <Logo size="lg" showText={false} />
-            <div className="flex flex-col items-center my-16">
+      <div className="bg-white/30 backdrop-blur-xs p-6 shadow-lg">
+        <div className="flex items-center justify-center">
+          <div className="flex flex-col pt-32 pb-20 font-bold text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+            <div className="flex flex-row gap-3">
+              <div className="font-secondary text-primary text-shadow-lg">
+                Tech
+              </div>
               <RotatingText
-                texts={["Technical Consulting", "Mentorship", "Teaching"]}
-                className="text-primary font-secondary"
+                texts={["Consulting", "Mentorship", "Learning"]}
+                className="text-white font-secondary"
                 auto={true}
                 loop={true}
                 rotationInterval={3000}
-                splitBy="words"
+                splitBy="characters"
+                initial={{ y: "-300%", opacity: 0 }}
               />
+            </div>
+            <div className="items-center ml-3">
               <RotatingText
                 texts={[
                   "resolve business pain-points",
-                  "career-change into the tech industry",
+                  "transition into the tech industry",
                   "learn new skills through the socratic method",
                 ]}
-                className="text-secondary text-2xl justify-end"
+                className="text-secondary text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl"
                 auto={true}
                 loop={true}
                 rotationInterval={3000}
                 splitBy="words"
+                initial={{ y: "300%", opacity: 0 }}
+                staggerFrom="first"
+                staggerDuration={0.05}
               />
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center">
+
+        <div className="flex flex-col items-center mb-10">
           <div className="pb-3">
             <a href={buttonHref} target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
-                variant="outline"
+                variant="default"
                 className="text-lg rounded-full"
               >
                 <ShinyText

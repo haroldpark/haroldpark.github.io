@@ -6,6 +6,7 @@ import { Logo } from "@/components/Logo";
 import { ShinyText } from "@/components/ShinyText";
 import { RotatingText } from "@/components/RotatingText";
 import { ArrowRight } from "lucide-react";
+import { Header } from "@/components/Header";
 
 export default function AboutMe() {
   const rotatingTexts = ["Innovative", "Scalable", "Modern", "Powerful"];
@@ -21,18 +22,12 @@ export default function AboutMe() {
   };
   return (
     <div className="relative">
-      {/* LetterGlitch foreground overlay */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
-        <LetterGlitch
-          glitchColors={["#2b4539", "#61dca3", "#76ca72", "#29752a"]}
-          glitchSpeed={50}
-          centerVignette={false}
-          outerVignette={true}
-          smooth={true}
-        />
-      </div>
-      {/* Main content */}
-      <div className="relative z-20 mx-auto px-4 sm:px-6 lg:px-8">
+      <Header
+        title="About Me"
+        subtitle="Full Stack Developer & Tech Enthusiast"
+        height="h-40"
+      />
+      {/* <div className="relative z-0 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center md:max-w-7xl md:mx-auto lg:col-span-6 bg-white/20 backdrop-blur-xs rounded-lg p-6 shadow-lg">
           <div className="flex items-center gap-4 mb-6">
             <div>
@@ -74,7 +69,6 @@ export default function AboutMe() {
             </div>
           </div>
 
-          {/* Right side - ProfileCard */}
           <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center lg:justify-center">
             <ProfileCard
               avatarUrl={profileCardProps.avatarUrl}
@@ -91,7 +85,7 @@ export default function AboutMe() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { TopNav } from "@/components/TopNav";
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { Inter, Montserrat } from "next/font/google";
@@ -28,6 +29,7 @@ export default function RootLayout({
       className={`bg-white dark:bg-gray-950 text-black dark:text-white ${inter.className}`}
     >
       <body className="min-h-[100dvh]">
+        <TopNav />
         <SWRConfig
           value={{
             fallback: {
