@@ -5,32 +5,57 @@ import Image from "next/image"
 export function ExperienceSection() {
   const experiences = [
     {
-      period: "Jan 2023 - Present",
-      title: "Mobile Product Designer",
+      period: "January 2025  — Current",
+      title: "Tech Mentor",
+      company: "Mentorcruise & Springboard",
       description:
-        "Vel facilisis volutpat est velit egestas dui. Urna nec cidu praesent semper feugiat. Vulputate ut pharetra sit.",
-      icon: "/images/agency.png",
+        "Provided personalized mentorship to software engineering students facing challenges transitioning into tech careers",
+      icon: "/images/experience/mentor.png",
     },
     {
-      period: "Jan 2021 - Dec 2022",
-      title: "VP of Design",
+      period: "June 2023 — Current",
+      title: "Tech Mentor",
+      company: "Mentorcruise & Springboard",
       description:
-        "Vel facilisis volutpat est velit egestas dui. Urna nec cidu praesent semper feugiat. Vulputate ut pharetra sit.",
-      icon: "/images/company.png",
+        "Provided personalized mentorship to software engineering students facing challenges transitioning into tech careers",
+      icon: "/images/experience/mentor.png",
     },
     {
-      period: "Mar 2020 - Dec 2020",
-      title: "Head of Product Design",
+      period: "July 2023 — Dec. 2024",
+      title: "Senior Software Engineer",
+      company: "Scope",
       description:
-        "Vel facilisis volutpat est velit egestas dui. Urna nec cidu praesent semper feugiat. Vulputate ut pharetra sit.",
-      icon: "/images/busines.png",
+        "Delivered full-stack development for consumer-facing cloud web application, connecting users to its AI-powered rope inspection system. Developed an MVP for a training platform that processes pre-existing AWS S3-hosted rope images through Scope's LLMs. Modernized front-end testing practices and revitalized back-end architecture.",
+      icon: "/images/experience/scope.png",
     },
     {
-      period: "Sep 2017 - Feb 2020",
-      title: "Web Designer",
+      period: "May 2020 — March 2023",
+      title: "Software Engineer",
+      company: "BrainGu",
       description:
-        "Vel facilisis volutpat est velit egestas dui. Urna nec cidu praesent semper feugiat. Vulputate ut pharetra sit.",
-      icon: "/images/startup.png",
+        "Delivered full-stack development of mission-critical features for the cloud-based WIDOW application. Maintained CI/CD pipeline achieving 80%+ test coverage. Resolved mission-blocking defects during live military exercises.",
+      icon: "/images/experience/braingu.png",
+    },
+    {
+      period: "Nov. 2018 — Mar. 2020",
+      title: "Full-stack Developer",
+      company: "CICOM Software",
+      description: "Full-stack development for various clients in Los Angeles, CA.",
+      icon: "/images/experience/cicom.png",
+    },
+    {
+      period: "Jan. 2017 — Jun. 2017",
+      title: "Freelance Developer",
+      company: "Sam Costa Studios",
+      description: "Remote freelance development work.",
+      icon: "/images/experience/freelance.png",
+    },
+    {
+      period: "Oct. 2016 — Dec. 2016",
+      title: "Software Developer Intern",
+      company: "BASIS.ed",
+      description: "Internship in Scottsdale, AZ.",
+      icon: "/images/experience/basis.png",
     },
   ]
 
@@ -47,7 +72,7 @@ export function ExperienceSection() {
             </p>
             <Button className="bg-white text-black hover:bg-gray-50 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px]">
               <FileText className="w-5 h-5" />
-              See full resume
+              View full resume
             </Button>
           </div>
 
@@ -55,16 +80,21 @@ export function ExperienceSection() {
             {experiences.map((exp, index) => (
               <div key={index} className="bg-white border-4 border-black rounded-3xl min-h-[220px] md:min-h-[240px]">
                 <div className="flex items-center justify-between mb-4 md:mb-6 pt-6 md:pt-8 px-6 md:px-8">
-                  <div className="text-base md:text-[22px] leading-tight md:leading-[34px] font-bold text-[#0B0B0B]">
-                    {exp.period}
+                  <div className="flex flex-col">
+                    <div className="text-base md:text-[22px] leading-tight md:leading-[34px] font-bold text-[#0B0B0B]">
+                      {exp.period}
+                    </div>
+                    <div className="text-sm md:text-lg font-bold text-gray-500">
+                      {exp.company}
+                    </div>
                   </div>
-                  <div className="rounded-full border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  <div className="rounded-full border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-white overflow-hidden">
                     <Image
-                      src={exp.icon || "/placeholder.svg"}
-                      alt={exp.title}
+                      src={exp.icon || "/images/placeholder.png"}
+                      alt={exp.company}
                       width={48}
                       height={48}
-                      className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 rounded-full"
+                      className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 object-contain p-1"
                     />
                   </div>
                 </div>

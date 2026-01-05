@@ -12,10 +12,10 @@ export function TestimonialsSection() {
             <br />
             say about <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block">my work</span>
           </h2>
-          <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto pb-8">
+          {/* <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto pb-8">
             Lacus, adipiscing lectus convallis purus aliquet cursus magnaol montes augue donec cras turpis ultrices
             nulla sed doler.
-          </p>
+          </p> */}
         </div>
 
         <div className="relative max-w-5xl mx-auto">
