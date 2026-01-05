@@ -40,7 +40,7 @@ export function ArticlesSection() {
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-[#FDB927] border-2 border-black rounded-full overflow-hidden flex-shrink-0">
                   <Image
                     src="/images/design-mode/63407fbdc2d4ac5270385fd4_home-he.png"
-                    alt="John Carter"
+                    alt="Harold Park"
                     width={64}
                     height={64}
                     className="object-cover"
