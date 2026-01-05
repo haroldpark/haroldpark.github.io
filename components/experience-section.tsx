@@ -43,8 +43,7 @@ export function ExperienceSection() {
               Take a look at my <span className="bg-[#6366F1] text-white px-3 py-1 inline-block">past experience</span>
             </h2>
             <p className="text-gray-400 mb-8 md:mb-10 leading-relaxed text-base md:text-lg">
-              Eu pellentesque arcu ornare velit faucibus egestas gravida sed in purus enim molestie gravida imperdiet
-              integer.
+              7+ years of professional full stack development experience, in diverse industries such as education, adtech, fashion, government, and manufacturing.
             </p>
             <Button className="bg-white text-black hover:bg-gray-50 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px]">
               <FileText className="w-5 h-5" />

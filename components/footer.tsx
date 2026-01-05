@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="bg-black text-white py-12 md:py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-12 md:mb-16 relative">
+          {/* <div className="mb-12 md:mb-16 relative">
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
               <div className="w-24 h-24 md:w-36 md:h-36 rounded-full flex items-center justify-center flex-shrink-0 relative">
                 <Image
@@ -37,26 +37,29 @@ export function Footer() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
                   <Image
-                    src="/images/footer-logo.jpeg"
-                    alt="Paperfolio X Logo"
-                    width={32}
-                    height={32}
+                    src="/images/headshot-square.jpg"
+                    alt=""
+                    width={100}
+                    height={100}
                     className="object-cover"
                   />
                 </div>
-                <span className="text-lg md:text-xl font-bold">Paperfolio X</span>
+                <span className="text-lg md:text-xl font-bold">Harold Park</span>
               </div>
-              <p className="text-gray-400 mb-6 text-sm leading-relaxed">
-                Lorem ipsum dolor amet consecte adipiscing elit. Lectus mattis nunc.
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Empathy is the key to
               </p>
-              <div className="flex gap-3">
+              <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+                building a great product
+              </p>
+              {/* <div className="flex gap-3">
                 <a
                   href="#"
                   className="w-10 h-10 bg-[#2F81F7] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
@@ -87,7 +90,7 @@ export function Footer() {
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
-              </div>
+              </div> */}
             </div>
 
             <div>
@@ -121,7 +124,7 @@ export function Footer() {
               </ul>
             </div>
 
-            <div>
+            {/* <div>
               <h3 className="font-bold mb-4">Utility Pages</h3>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
@@ -155,21 +158,21 @@ export function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <div>
-              <h3 className="font-bold mb-4">Contact us</h3>
+              <h3 className="font-bold mb-4">Contact</h3>
               <ul className="space-y-3 text-gray-400 text-sm">
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <a href="mailto:hello@john.com" className="hover:text-white transition-colors">
-                    nikhil@helpinggeeks.com
+                  <a href="mailto:theharoldpark@gmail.com" className="hover:text-white transition-colors">
+                    theharoldpark@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   <a href="tel:246234-4643" className="hover:text-white transition-colors">
-                    +91-9000057810
+                    +1 323-270-4858
                   </a>
                 </li>
               </ul>
@@ -177,7 +180,7 @@ export function Footer() {
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>Made by Nikhil - Powered by V0</p>
+            <p>Made with love, by Harold Park</p>
           </div>
         </div>
       </div>

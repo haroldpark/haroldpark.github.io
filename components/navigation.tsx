@@ -10,27 +10,30 @@ export function Navigation() {
         </div>
 
         <div className="hidden md:flex items-center gap-6 flex-1 justify-center">
-          <a href="#home" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
-            Home
+          <a href="#services" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
+            Services
           </a>
           <a href="#about" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
-            About
+            Experiences
           </a>
           <a href="#portfolio" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
-            Portfolio
+            Projects
           </a>
-          <button className="flex items-center gap-1 text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
+          <a href="#portfolio" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
+            Testimonials
+          </a>
+          {/* <button className="flex items-center gap-1 text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
             Pages
             <ChevronDown className="w-4 h-4" />
           </button>
           <a href="#cart" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
             Cart(0)
-          </a>
+          </a> */}
         </div>
 
-        <Button className="bg-black text-white hover:bg-black/90 rounded-sm px-5 h-12 min-w-[48px] flex-shrink-0">
+        {/* <Button className="bg-black text-white hover:bg-black/90 rounded-sm px-5 h-12 min-w-[48px] flex-shrink-0">
           <Mail className="w-10 h-10" strokeWidth={2.5} />
-        </Button>
+        </Button> */}
       </nav>
     </div>
   )

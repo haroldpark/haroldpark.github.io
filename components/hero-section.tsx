@@ -6,14 +6,13 @@ export function HeroSection() {
     <section className="container mx-auto px-4 py-16 md:py-24">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <h1 className="text-[42px] leading-[50px] md:text-[72px] font-bold md:leading-[85px]">
-            I'm <span className="bg-[#FF6B7A] text-white px-3 py-1 inline-block">John Carter</span>, a Web Designer from{" "}
-            <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block">New York</span>
+          <h1 className="text-[42px] leading-[50px] md:text-[69px] font-bold md:leading-[85px]">
+            I'm <span className="bg-[#FF6B7A] text-white px-3 py-1 inline-block">Harold Park</span>, a Software Engineer from{" "}
+            <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block">Las Vegas</span>
           </h1>
 
           <p className="text-[#393939] text-[16px] md:text-[18px] font-medium leading-[28px] md:leading-[30px] max-w-xl">
-            Lacus, adipiscing lectus convallis purus aliquet cursus magnaol montes augue donec cras turpis ultrices
-            nulla sed doler.
+            Full-stack web engineer specializing in modern front-end Web technologies. I am passionate about fostering a culture of mindfulness and sustainability within tech teams while creating products that benefit the mental health industry. Empathy is the key to building a great product!
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-7 pt-4">
@@ -34,7 +33,7 @@ export function HeroSection() {
         <div className="flex justify-center md:justify-end">
           <div className="relative w-full max-w-md aspect-square bg-[#FDB927] border-4 border-black rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <img
-              src="/images/design-mode/63407fbdc2d4ac5270385fd4_home-he.png"
+              src="/images/headshot-square.jpg"
               alt="Illustrated character avatar"
               className="w-full h-full object-cover"
             />

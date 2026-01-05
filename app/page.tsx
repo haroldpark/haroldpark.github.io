@@ -16,9 +16,9 @@ export default function Home() {
       <HeroSection />
       <LogoMarquee />
       <ServicesSection />
-      <AboutSection />
-      <PortfolioSection />
+      {/* <AboutSection /> */}
       <ExperienceSection />
+      <PortfolioSection />
       <TestimonialsSection />
       <ArticlesSection />
       <Footer />
