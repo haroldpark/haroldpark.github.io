@@ -7,7 +7,7 @@ export function ExperienceSection() {
     {
       period: "January 2025  — Current",
       title: "Tech Mentor",
-      company: "Mentorcruise & Springboard",
+      company: "Mentorcruise",
       description:
         "Provided personalized mentorship to software engineering students facing challenges transitioning into tech careers",
       icon: "/images/experience/mentor.png",
@@ -64,7 +64,7 @@ export function ExperienceSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           <div className="text-white pt-0 md:pt-12 md:sticky md:top-12 self-start">
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-6 md:mb-8 leading-[1.3]">
+            <h2 id="experiences" className="text-3xl md:text-4xl lg:text-6xl font-bold mb-6 md:mb-8 leading-[1.3]">
               Take a look at my <span className="bg-[#6366F1] text-white px-3 py-1 inline-block">past experience</span>
             </h2>
             <p className="text-gray-400 mb-8 md:mb-10 leading-relaxed text-base md:text-lg">

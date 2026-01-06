@@ -27,7 +27,7 @@ export function PortfolioSection() {
     <section className="container mx-auto px-4 py-16 md:py-24">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 id="projects" className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Take a look at my <br />
             <span className="bg-[#FFC224] text-black px-3 py-1 inline-block">personal projects</span>
           </h2>

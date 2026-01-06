@@ -13,15 +13,15 @@ export function Navigation() {
           <a href="#services" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
             Services
           </a>
-          <a href="#about" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
+          <a href="#experiences" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
             Experiences
           </a>
-          <a href="#portfolio" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
+          <a href="#projects" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
             Projects
           </a>
-          <a href="#portfolio" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
+          {/* <a href="#portfolio" className="text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
             Testimonials
-          </a>
+          </a> */}
           {/* <button className="flex items-center gap-1 text-[18px] font-bold leading-[20px] hover:opacity-70 transition-opacity">
             Pages
             <ChevronDown className="w-4 h-4" />

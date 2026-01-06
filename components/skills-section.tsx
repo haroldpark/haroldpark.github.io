@@ -25,7 +25,7 @@ export function SkillsSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12 md:mb-16 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h2 id="skills" className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Technical <span className="bg-[#FFC224] text-black px-3 py-1 inline-block">Skills</span>
             </h2>
           </div>

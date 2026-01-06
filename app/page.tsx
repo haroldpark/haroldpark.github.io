@@ -25,7 +25,7 @@ export default function Home() {
       <CertificationsSection />
       <EducationSection />
       <PortfolioSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <ArticlesSection />
       <Footer />
     </main>

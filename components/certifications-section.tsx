@@ -15,7 +15,6 @@ export function CertificationsSection() {
                 <Award className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-2xl font-bold">CompTIA SY0-601 Security+ Certified</h3>
-              <p className="text-lg text-gray-600 font-medium">2023 — 2026</p>
             </div>
           </div>
         </div>

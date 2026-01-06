@@ -7,27 +7,27 @@ export function ServicesSection() {
   const services = [
     {
       title: "Web development",
-      description: "Custom website creation using modern web technologies.",
+      description: "Custom website creation using modern web technologies",
       image: "/images/web-design.svg",
       technologies: ["React", "Vue", "Next.js", "Tailwind CSS", "AWS", "Node.js", "Express", "PostgreSQL", ],
     },
     {
       title: "UI/UX design",
-      description: "User-friendly interfaces that are simple yet intuitively makes sense.",
+      description: "User-friendly interfaces that are simple yet intuitively makes sense",
       image: "/images/ui-ux-design.svg",
       technologies: ["Figma", "Canva"],
-      quote: `"Three quarters of the miseries and misunderstandings in the world would disappear if we step into the shoes of our adversaries and understand their standpoint."`,
+      quote: `"Three quarters of the miseries and misunderstandings in the world would disappear if we step into the shoes of our adversaries and understand their standpoint"`,
       author: "Mahatma Gandhi"  
     },
     {
       title: "Tech Mentorship",
-      description: "Empathetic mentorship. The ultimate goal: become a self-sustaing engineer.",
+      description: "Empathetic mentorship. The ultimate goal: become a self-sustaing engineer",
       image: "/images/tech-mentoring.png",
       
     },
     {
       title: "Math tutoring",
-      description: "All levels of math up to Calculus BC, including SAT/ACT prep and competition math such as AMC.",
+      description: "All levels of math up to Calculus BC, including SAT/ACT prep and competition math such as AMC",
       image: "/images/user-research.svg",
     },
     {
@@ -41,7 +41,7 @@ export function ServicesSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-4xl md:text-[52px] md:leading-[60px] font-bold mb-4">
+            <h2 id="services" className="text-4xl md:text-[52px] md:leading-[60px] font-bold mb-4">
               My broad <span className="bg-[#FF4A60] text-white px-3 py-1 inline-block">set of services</span>
             </h2>
             <p className="text-[#393939] text-base md:text-lg font-medium leading-relaxed md:leading-[30px] max-w-2xl mx-auto">
