@@ -7,18 +7,18 @@ export function ExperienceSection() {
     {
       period: "January 2025  — Current",
       title: "Tech Mentor",
-      company: "Mentorcruise",
+      company: "hp-solutions",
       description:
         "Provided personalized mentorship to software engineering students facing challenges transitioning into tech careers",
-      icon: "/images/experience/mentor.png",
+      icon: "logos/hpsolutions-logo-square.png",
     },
     {
       period: "June 2023 — Current",
       title: "Tech Mentor",
-      company: "Mentorcruise & Springboard",
+      company: "Springboard",
       description:
         "Provided personalized mentorship to software engineering students facing challenges transitioning into tech careers",
-      icon: "/images/experience/mentor.png",
+      icon: "logos/springboard.jpg",
     },
     {
       period: "July 2023 — Dec. 2024",
@@ -26,7 +26,7 @@ export function ExperienceSection() {
       company: "Scope",
       description:
         "Delivered full-stack development for consumer-facing cloud web application, connecting users to its AI-powered rope inspection system. Developed an MVP for a training platform that processes pre-existing AWS S3-hosted rope images through Scope's LLMs. Modernized front-end testing practices and revitalized back-end architecture.",
-      icon: "/images/experience/scope.png",
+      icon: "logos/scope-logo-square.jpg",
     },
     {
       period: "May 2020 — March 2023",
@@ -34,28 +34,28 @@ export function ExperienceSection() {
       company: "BrainGu",
       description:
         "Delivered full-stack development of mission-critical features for the cloud-based WIDOW application. Maintained CI/CD pipeline achieving 80%+ test coverage. Resolved mission-blocking defects during live military exercises.",
-      icon: "/images/experience/braingu.png",
+      icon: "logos/braingu-logo-square.jpg",
     },
     {
       period: "Nov. 2018 — Mar. 2020",
       title: "Full-stack Developer",
       company: "CICOM Software",
       description: "Full-stack development for various clients in Los Angeles, CA.",
-      icon: "/images/experience/cicom.png",
+      icon: "logos/cicom-logo-square.png",
     },
     {
       period: "Jan. 2017 — Jun. 2017",
       title: "Freelance Developer",
       company: "Sam Costa Studios",
       description: "Remote freelance development work.",
-      icon: "/images/experience/freelance.png",
+      icon: "images/company.png",
     },
     {
       period: "Oct. 2016 — Dec. 2016",
       title: "Software Developer Intern",
       company: "BASIS.ed",
       description: "Internship in Scottsdale, AZ.",
-      icon: "/images/experience/basis.png",
+      icon: "logos/basised-logo-square.png",
     },
   ]
 
@@ -68,12 +68,14 @@ export function ExperienceSection() {
               Take a look at my <span className="bg-[#6366F1] text-white px-3 py-1 inline-block">past experience</span>
             </h2>
             <p className="text-gray-400 mb-8 md:mb-10 leading-relaxed text-base md:text-lg">
-              7+ years of professional full stack development experience, in diverse industries such as education, adtech, fashion, government, and manufacturing.
+              7+ years of professional full stack development experience in diverse industries such as education, adtech, fashion, government, and manufacturing.
             </p>
-            <Button className="bg-white text-black hover:bg-gray-50 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px]">
-              <FileText className="w-5 h-5" />
-              View full resume
-            </Button>
+            <a href="Resume_HaroldPark_Dev_2026.pdf" target="_blank">
+              <Button className="bg-white text-black hover:bg-gray-50 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px]">
+                <FileText className="w-5 h-5" />
+                View Full Résumé
+              </Button>
+            </a>
           </div>
 
           <div className="space-y-6">
@@ -94,7 +96,7 @@ export function ExperienceSection() {
                       alt={exp.company}
                       width={48}
                       height={48}
-                      className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 object-contain p-1"
+                      className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 object-contain"
                     />
                   </div>
                 </div>

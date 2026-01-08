@@ -1,4 +1,4 @@
-import { Mail, FileText } from "lucide-react"
+import { Mail, FileText, CalendarDays } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
@@ -15,9 +15,11 @@ export function HeroSection() {
             Full-stack web engineer specializing in modern front-end Web technologies. I am passionate about fostering a culture of mindfulness and sustainability within tech teams while creating products that benefit the mental health industry. Empathy is the key to building a great product!
           </p>
 
-          <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-7 pt-4">
+          <div className="flex sm:flex-row flex-wrap gap-4 sm:gap-7 pt-4">
             <a href="mailto:theharoldpark@gmail.com" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-[#0B0B0B] text-white hover:bg-black/90 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px]">
+            <Button className="bg-[#0B0B0B] border-[3px] border-black text-white hover:bg-black/70 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[169px]">
+
+            {/* <Button className="bg-[#0B0B0B] text-white hover:bg-black/90 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px]"> */}
               <Mail className="w-5 h-5" />
               Email me
             </Button>
@@ -25,10 +27,19 @@ export function HeroSection() {
             <a href="Resume_HaroldPark_Dev_2026.pdf" target="_blank">
               <Button
                 variant="outline"
-                className="bg-white border-[3px] border-black hover:bg-gray-50 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px]"
+                className="bg-white border-[3px] border-black hover:bg-gray-50 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[169px]"
               >
                 <FileText className="w-5 h-5" />
-                View Resume
+                See Résumé
+              </Button>
+            </a>
+            <a href="https://calendar.app.google/dP9uFU8UuhV8F3m19" target="_blank">
+              <Button
+                variant="outline"
+                className="bg-[#2F81F7] border-[3px] border-black text-white hover:bg-blue-400 hover:text-white rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[169px]"
+              >
+                <CalendarDays className="w-5 h-5" />
+                Meet me
               </Button>
             </a>
           </div>

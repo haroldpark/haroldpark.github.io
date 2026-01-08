@@ -4,7 +4,7 @@ export function SkillsSection() {
   const needs = [
     {
       category: "LANGUAGES",
-      skills: ["Javascript (Fluent)", "HTML (Fluent)", "CSS (Fluent)", "Python (Intermediate)", "Rust (Basic)", "C# (Basic)", "C++ (Basic)"],
+      skills: ["Javascript (Fluent)", "HTML (Fluent)", "CSS (Fluent)", "Python (Intermediate)", "Rust (Intermediate)", "C# (Intermediate)", "C++ (Basic)"],
     },
     {
       category: "FRONT-END",

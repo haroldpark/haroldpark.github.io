@@ -9,7 +9,7 @@ export function PortfolioSection() {
       tag: "Full Stack",
       logo: "/images/studio-logo.svg",
       bgColor: "bg-[#6366F1]",
-      illustration: "/images/studio-workspace.svg",
+      illustration: "/images/coming-soon.png",
       link: null,
     },
     {
@@ -18,7 +18,7 @@ export function PortfolioSection() {
       tag: "AI Engineering",
       logo: "/images/venture-logo.svg",
       bgColor: "bg-[#2F81F7]",
-      illustration: "/images/venture-workspace.svg",
+      illustration: "/images/hear-here.png",
       link: "https://hear-here-six.vercel.app/",
     },
   ]
@@ -77,19 +77,19 @@ export function PortfolioSection() {
                   )}
               </div>
 
-                         {/*     <div className={`${project.bgColor} relative overflow-hidden min-h-[250px] md:min-h-[500px]`}>
-                <Image
-                  src={project.illustration || "/placeholder.svg"}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-                />
-              </div> */}
+                <div className={`${project.bgColor} relative overflow-hidden min-h-[250px] md:min-h-[500px]`}>
+                 <Image
+                   src={project.illustration || "/placeholder.svg"}
+                   alt={project.title}
+                   fill
+                   className="object-cover transition-transform duration-500 ease-out group-hover:scale-110  shadow-xs"
+                 />
+               </div>
             </div>
           ))}
         </div>
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="bg-black text-white px-6 md:px-8 py-4 md:py-5 rounded-[12px] font-semibold hover:bg-gray-900 transition-colors flex items-center justify-center gap-2 w-full sm:w-auto text-sm md:text-base">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -101,7 +101,7 @@ export function PortfolioSection() {
             </svg>
             Browse all portfolio
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -28,7 +28,7 @@ export function ServicesSection() {
     {
       title: "Math tutoring",
       description: "All levels of math up to Calculus BC, including SAT/ACT prep and competition math such as AMC",
-      image: "/images/user-research.svg",
+      image: "/images/math-tutoring.png",
     },
     {
       title: "Counseling",
