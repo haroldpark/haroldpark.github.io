@@ -1,7 +1,15 @@
-import { Facebook, Twitter, Instagram, Youtube, Linkedin, Mail, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import Image from "next/image"
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+  Linkedin,
+  Mail,
+  Phone,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -51,7 +59,9 @@ export function Footer() {
                     className="object-cover"
                   />
                 </div>
-                <span className="text-lg md:text-xl font-bold">Harold Park</span>
+                <span className="text-lg md:text-xl font-bold">
+                  Harold Park
+                </span>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Empathy is the key to
@@ -93,7 +103,7 @@ export function Footer() {
               </div> */}
             </div>
 
-            <div>
+            {/* <div>
               <h3 className="font-bold mb-4">Pages</h3>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
@@ -116,13 +126,8 @@ export function Footer() {
                     Portfolio
                   </a>
                 </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Single Project
-                  </a>
-                </li>
               </ul>
-            </div>
+            </div> */}
 
             {/* <div>
               <h3 className="font-bold mb-4">Utility Pages</h3>
@@ -165,13 +170,19 @@ export function Footer() {
               <ul className="space-y-3 text-gray-400 text-sm">
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <a href="mailto:theharoldpark@gmail.com" className="hover:text-white transition-colors">
+                  <a
+                    href="mailto:theharoldpark@gmail.com"
+                    className="hover:text-white transition-colors"
+                  >
                     theharoldpark@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  <a href="tel:246234-4643" className="hover:text-white transition-colors">
+                  <a
+                    href="tel:246234-4643"
+                    className="hover:text-white transition-colors"
+                  >
                     +1 323-270-4858
                   </a>
                 </li>
@@ -185,5 +196,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

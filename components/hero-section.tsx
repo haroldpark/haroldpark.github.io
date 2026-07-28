@@ -1,28 +1,37 @@
-import { Mail, FileText, CalendarDays } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Mail, FileText, CalendarDays } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
     <section className="container mx-auto px-4 py-16 md:py-24">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <h1 className="text-[42px] leading-[50px] md:text-[69px] font-bold md:leading-[85px]">
-            I'm <span className="bg-orange-500 text-white px-3 py-1 inline-block">Harold Park</span>, a Software Engineer currently residing in{" "}
-            <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block">Las Vegas</span>
-          </h1>
+          <h2 className="text-[38px] leading-11 md:text-[65px] font-bold md:leading-[80px]">
+            <div>
+              My name is{" "}
+              <span className="bg-orange-500 text-white px-3 py-1 inline-block">
+                Harold Park
+              </span>
+              , a Software Engineer currently residing in{" "}
+              <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block">
+                Lyons, NY
+              </span>
+            </div>
+          </h2>
 
-          <p className="text-[#393939] text-[16px] md:text-[18px] font-medium leading-[28px] md:leading-[30px] max-w-xl">
-            Full-stack web engineer specializing in modern front-end Web technologies. I am passionate about fostering a culture of mindfulness and sustainability within tech teams while creating products that benefit the mental health industry. Empathy is the key to building a great product!
-          </p>
+          <p className="text-[#393939] text-[16px] md:text-[18px] font-medium leading-[28px] md:leading-[30px] max-w-xl"></p>
 
           <div className="flex sm:flex-row flex-wrap gap-4 sm:gap-7 pt-4">
-            <a href="mailto:theharoldpark@gmail.com" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-[#0B0B0B] border-[3px] border-black text-white hover:bg-black/70 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[169px]">
-
-            {/* <Button className="bg-[#0B0B0B] text-white hover:bg-black/90 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px]"> */}
-              <Mail className="w-5 h-5" />
-              Email me
-            </Button>
+            <a
+              href="mailto:theharoldpark@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-[#0B0B0B] border-[3px] border-black text-white hover:bg-black/70 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[169px]">
+                {/* <Button className="bg-[#0B0B0B] text-white hover:bg-black/90 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[240px]"> */}
+                <Mail className="w-5 h-5" />
+                Email me
+              </Button>
             </a>
             <a href="Resume_HaroldPark_Dev_2026.pdf" target="_blank">
               <Button
@@ -30,10 +39,13 @@ export function HeroSection() {
                 className="bg-white border-[3px] border-black hover:bg-gray-50 rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[169px]"
               >
                 <FileText className="w-5 h-5" />
-                See Résumé
+                See Resume
               </Button>
             </a>
-            <a href="https://calendar.app.google/dP9uFU8UuhV8F3m19" target="_blank">
+            <a
+              href="https://calendar.app.google/dP9uFU8UuhV8F3m19"
+              target="_blank"
+            >
               <Button
                 variant="outline"
                 className="bg-[#2F81F7] border-[3px] border-black text-white hover:bg-blue-400 hover:text-white rounded-lg py-5 px-8 md:py-[22px] md:px-[62px] text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-[169px]"
@@ -56,5 +68,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
